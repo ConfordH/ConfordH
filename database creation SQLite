@@ -1,0 +1,73 @@
+import sqlite3
+
+# Create an in-memory SQLite database connection
+connection = sqlite3.connect(':memory:')
+
+# Get the SQLite database version
+cursor = connection.cursor()
+cursor.execute("SELECT sqlite_version();")
+print("SQLite version:", cursor.fetchone()[0])
+
+# Create a table in the database
+cursor.execute('''CREATE TABLE IF NOT EXISTS my_table (
+                    id INTEGER PRIMARY KEY,
+                    name TEXT,
+                    age INTEGER
+                );''')
+
+# Insert records into the table
+records = [
+    (1, 'John', 25),
+    (2, 'Jane', 30),
+    (3, 'Alice', 35)
+]
+cursor.executemany("INSERT INTO my_table (id, name, age) VALUES (?, ?, ?);", records)
+connection.commit()
+
+# Select all rows from the table and display records
+cursor.execute("SELECT * FROM my_table;")
+print("Records:")
+for row in cursor.fetchall():
+    print(row)
+
+# Insert values into the table from user input
+id = int(input("Enter ID: "))
+name = input("Enter Name: ")
+age = int(input("Enter Age: "))
+cursor.execute("INSERT INTO my_table (id, name, age) VALUES (?, ?, ?);", (id, name, age))
+connection.commit()
+
+# Count the number of rows in the table
+cursor.execute("SELECT COUNT(*) FROM my_table;")
+count = cursor.fetchone()[0]
+print("Number of rows:", count)
+
+# Update a specific column value of a given table
+new_age = 40
+cursor.execute("UPDATE my_table SET age = ? WHERE id = ?;", (new_age, id))
+connection.commit()
+
+# Select all rows before and after updating the table
+cursor.execute("SELECT * FROM my_table;")
+print("Records before update:")
+for row in cursor.fetchall():
+    print(row)
+
+# Update all values of a specific column in the table
+new_age_all = 50
+cursor.execute("UPDATE my_table SET age = ?;", (new_age_all,))
+connection.commit()
+
+# Delete a specific row from the table
+cursor.execute("DELETE FROM my_table WHERE id = ?;", (id,))
+connection.commit()
+
+# Alter the table
+cursor.execute("ALTER TABLE my_table ADD COLUMN email TEXT;")
+connection.commit()
+
+# Create a backup of the database
+connection.backup("backup.db")
+
+# Close the database connection
+connection.close()
