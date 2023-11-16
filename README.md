@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @ConfordH
-- 👀 I web3, blockchain developer, not active on github, but now i am coming back home. 
+- 👀 I web3, blockchain developer, not been active on github, but now I am coming back home. 
 - 🌱 I’m proficient in typescript, javascript, and solidity.
 - 💞️ I’m looking to collaborate on any projects that will improve my skills.
 - 📫 How to reach me... I'm available on LinkedIn and Twitter name: Hamilton Conford
