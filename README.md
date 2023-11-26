@@ -3,6 +3,7 @@
 - 🌱 I’m proficient in typescript, javascript, and solidity.
 - 💞️ I’m looking to collaborate on any projects that will improve my skills.
 - 📫 How to reach me... I'm available on LinkedIn and Twitter name: Hamilton Conford
+- Buntu Labs co-founder
 - Got a contract? Let's discus it <a href="https://www.upwork.com/freelancers/~01488ab54ef536efa1" here />
 
 <!---
