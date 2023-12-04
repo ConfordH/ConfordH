@@ -1,10 +1,12 @@
-- 👋 Hi, I’m @ConfordH
-- 👀 I web3, blockchain developer, not been active on github, but now I am coming back home. 
-- 🌱 I’m proficient in typescript, javascript, and solidity.
-- 💞️ I’m looking to collaborate on any projects that will improve my skills.
-- 📫 How to reach me... I'm available on LinkedIn and Twitter name: Hamilton Conford
-- 👨‍💻⚙️Buntu Labs co-founder
-- Got a contract? Let's discus it <a href="https://www.upwork.com/freelancers/~01488ab54ef536efa1" here />
+👋 Greetings, I'm Hamilton Conford, co-founder of Buntu Labs and a passionate web3 and blockchain developer based in Nairobi, Kenya.
+
+- 👀 While my GitHub activity may have been quiet, I am excited to announce my return to this vibrant community.
+- 🌱 Proficient in TypeScript, JavaScript, and Solidity, I am eager to collaborate on projects that not only challenge me but also contribute to the enhancement of my skills.
+- 👨‍💻⚙️ Co-founder at Buntu Labs, I bring a wealth of experience and innovation to the table.
+
+💼 Open for collaborations! If you have an exciting project or opportunity, feel free to reach out. You can contact me through email (provided in my GitHub profile), Upwork, or connect with me on Twitter via the handle @Conford_Codes. Let's discuss your ideas and explore how we can create something extraordinary together.
+
+Looking forward to connecting with like-minded individuals and contributing to groundbreaking projects!
 
 <!---
 ConfordH/ConfordH is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
